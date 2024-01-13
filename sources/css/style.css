@@ -1,0 +1,301 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+#background {
+  position: fixed; /* or absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: backdrop-filter 0.5s ease;
+  z-index: -1;
+}
+
+header {
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  background-color: rgba(22, 22, 23, 0.8);
+  width: 100%;
+  height: 44px;
+  position: fixed;
+  z-index: 1;
+  backdrop-filter: saturate(180%) blur(20px); /* 饱和度设置成180%*/
+}
+header #head_selc {
+  margin: 0 295px 0;
+  padding: 0 22px 0;
+  height: 44px;
+}
+header ul {
+  list-style: none;
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 45px;
+}
+header li {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 11.5px;
+  text-align: center;
+  font-weight: lighter;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header img {
+  height: 1rem;
+}
+header #bag_icon {
+  height: 1.2rem;
+}
+header #search_icon {
+  height: 1.4rem;
+}
+
+#SubMenu {
+  display: none;
+  margin-top: 472px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  color: aliceblue;
+}
+#SubMenu .sub-container {
+  width: 100%;
+  margin: 0 335px 0;
+  display: flex;
+  flex-direction: row;
+  height: 430px;
+}
+#SubMenu #box1 {
+  width: auto;
+  margin-right: 130px;
+}
+#SubMenu #box2,
+#SubMenu #box3 {
+  width: auto;
+  margin-right: 50px;
+}
+
+#SubMenu #box2 p,
+#SubMenu #box3 p {
+  font-size: 12px;
+}
+
+#SubMenu p {
+  font-size: 25px;
+  margin: 0 0 10px;
+}
+#SubMenu #box-title {
+  color: gray;
+  font-size: 11.5px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#SubMenu #box-con {
+  font-size: 11.5px;
+  margin-top: 25px;
+}
+#SubMenu #box-buttom {
+  font-size: 11.5px;
+  margin-top: 10px;
+}
+main #iphone15p_img {
+  z-index: 1;
+  height: 744px;
+  margin-bottom: 15px;
+  background-image: url("/apple_main_page/sources/img/iphone15p/hero_iphone15pro__i70z9oz3hj2i_largetall.jpg");
+  background-color: aliceblue;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: aliceblue;
+}
+main #iphone15p_img_container {
+  font-weight: normal;
+  padding-top: 96px;
+  height: 200px;
+  text-align: center;
+}
+main .head_line {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: normal;
+  margin: 0%;
+}
+
+main .intro_line {
+  font-size: 27px;
+  font-weight: lighter;
+  margin-top: 6px;
+}
+main .selection {
+  text-decoration: none;
+  color: #0071e3;
+  font-size: 21px;
+  font-weight: normal;
+}
+main .selection:hover {
+  text-decoration: underline;
+}
+main #buy_selct {
+  margin-left: 35px;
+}
+
+main #iphone15_img {
+  height: 692px;
+  background-image: url("/apple_main_page/sources/img/iphone15/iphone15.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: black;
+}
+main #iphone15_img_container {
+  font-weight: normal;
+  padding-top: 44px;
+  height: 200px;
+  text-align: center;
+}
+main #ipad_img {
+  height: 692px;
+  margin-bottom: 8px;
+  background-image: url("/apple_main_page/sources/img/ipad/hero_ipad__rh99l6c3yuyy_largetall.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: black;
+}
+main #ipad_img_container {
+  font-weight: normal;
+  padding-top: 300px;
+  margin-left: 450px;
+  height: 300px;
+  text-align: center;
+}
+main .apple_block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 8px;
+}
+main .apple_block #block1 {
+  width: 49.5%;
+  position: relative;
+  padding-top: 580px;
+  background-image: url("/apple_main_page/sources/img/block/promo_apple_watch_se_order__j70okzn28uye_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main .apple_block #block2 {
+  position: relative;
+  width: 49.5%;
+  padding-top: 580px;
+  background-image: url("/apple_main_page/sources/img/block/promo_mbp__ek7p477bkp6q_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main .apple_block #block3 {
+  position: relative;
+  margin-top: 10px;
+  width: 49.5%;
+  padding-top: 580px;
+  background-image: url("/apple_main_page/sources/img/block/promo_airpods_pro_order__d8xv36p4uwae_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main .apple_block #block4 {
+  margin-top: 10px;
+  width: 49.5%;
+  padding-top: 580px;
+  position: relative;
+  background-image: url("/apple_main_page/sources/img/block/promo_apple_fitness_plus_new_years__bcmtyp1au76a_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main .apple_block #block5 {
+  position: relative;
+  margin-top: 10px;
+  width: 49.5%;
+  padding-top: 580px;
+  background-image: url("/apple_main_page/sources/img/block/promo_iphone_tradein__bugw15ka691e_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main .apple_block #block6 {
+  position: relative;
+  margin-top: 10px;
+  width: 49.5%;
+  padding-top: 580px;
+  background-image: url("/apple_main_page/sources/img/block/promo_apple_watch_series_9_order__b3u85rm9zf6u_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main .head_tag {
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  position: absolute;
+  text-align: center;
+  width: 80%;
+}
+main .head_tag img {
+  padding-bottom: 10px;
+}
+main .head_tag h3 {
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding: 0 10px;
+  margin: 0px 0;
+}
+main .head_tag h2 {
+  font-size: 38px;
+  font-weight: 500;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+main .head_tag a {
+  padding-top: 10px;
+  font-size: 17px;
+}
+main #block3 .head_tag {
+  top: 45px;
+  color: aliceblue;
+}
+main #block6 .head_tag {
+  color: aliceblue;
+}
+main #block5 .head_tag h3 {
+  padding: 0 10px;
+}
+
+.carousel {
+  position: relative;
+  width: 500px; /* Set the width of the carousel */
+  height: 300px; /* Set the height of the carousel */
+  overflow: hidden;
+}
+
+.carousel-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
