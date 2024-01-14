@@ -10,7 +10,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: backdrop-filter 0.5s ease;
   z-index: -1;
 }
 
@@ -124,7 +123,7 @@ main #iphone15p_img_container {
 }
 main .head_line {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 50px;
+  font-size: 53px;
   font-weight: normal;
   margin: 0%;
 }
@@ -132,6 +131,7 @@ main .head_line {
 main .intro_line {
   font-size: 27px;
   font-weight: lighter;
+  margin-bottom: 20px;
   margin-top: 6px;
 }
 main .selection {
@@ -144,7 +144,7 @@ main .selection:hover {
   text-decoration: underline;
 }
 main #buy_selct {
-  margin-left: 35px;
+  margin-left: 30px;
 }
 
 main #iphone15_img {
@@ -161,6 +161,10 @@ main #iphone15_img_container {
   height: 200px;
   text-align: center;
 }
+main #iphone15_img_container .head_line {
+  font-size: 53px;
+  font-weight: 600;
+}
 main #ipad_img {
   height: 692px;
   margin-bottom: 8px;
@@ -176,6 +180,10 @@ main #ipad_img_container {
   margin-left: 450px;
   height: 300px;
   text-align: center;
+}
+main #ipad_img_container .head_line {
+  font-size: 53px;
+  font-weight: 600;
 }
 main .apple_block {
   display: flex;
@@ -254,7 +262,7 @@ main .head_tag img {
   padding-bottom: 10px;
 }
 main .head_tag h3 {
-  font-size: 17px;
+  font-size: 19px;
   font-family: sans-serif;
   font-weight: lighter;
   padding: 0 10px;
@@ -266,10 +274,7 @@ main .head_tag h2 {
   padding: 0 10px;
   margin: 10px 0;
 }
-main .head_tag a {
-  padding-top: 10px;
-  font-size: 17px;
-}
+
 main #block3 .head_tag {
   top: 45px;
   color: aliceblue;
@@ -281,6 +286,13 @@ main #block5 .head_tag h3 {
   padding: 0 10px;
 }
 
+main .apple_block .selection {
+  margin-top: 15px;
+  font-size: 17px;
+}
+main .apple_block #buy_selct {
+  margin-left: 12px;
+}
 .carousel {
   position: relative;
   width: 500px; /* Set the width of the carousel */
