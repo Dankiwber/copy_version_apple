@@ -5,12 +5,10 @@ body {
   font-family: sans-serif;
 }
 #background {
+  transition: height 0.2s ease;
   position: fixed; /* or absolute */
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
 }
 
 header {
@@ -24,8 +22,8 @@ header {
   backdrop-filter: saturate(180%) blur(20px); /* 饱和度设置成180%*/
 }
 header #head_selc {
-  margin: 0 295px 0;
-  padding: 0 22px 0;
+  margin: 0 16.5% 0;
+  padding: 0 1.5% 0;
   height: 44px;
 }
 header ul {
@@ -75,6 +73,23 @@ header #search_icon {
   width: auto;
   margin-right: 130px;
 }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animated-text {
+  opacity: 0; /* 初始状态不可见 */
+  animation-name: fadeInUp;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: var(--delay); /* 使用自定义的延迟时间 */
+}
+
 #SubMenu #box2,
 #SubMenu #box3 {
   width: auto;
@@ -108,7 +123,7 @@ main #iphone15p_img {
   z-index: 1;
   height: 744px;
   margin-bottom: 15px;
-  background-image: url("/apple_main_page/sources/img/iphone15p/hero_iphone15pro__i70z9oz3hj2i_largetall.jpg");
+  background-image: url("../img/iphone15p/hero_iphone15pro__i70z9oz3hj2i_largetall.jpg");
   background-color: aliceblue;
   background-size: cover;
   background-repeat: no-repeat;
@@ -149,7 +164,7 @@ main #buy_selct {
 
 main #iphone15_img {
   height: 692px;
-  background-image: url("/apple_main_page/sources/img/iphone15/iphone15.jpeg");
+  background-image: url("../img/iphone15/iphone15.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -168,7 +183,7 @@ main #iphone15_img_container .head_line {
 main #ipad_img {
   height: 692px;
   margin-bottom: 8px;
-  background-image: url("/apple_main_page/sources/img/ipad/hero_ipad__rh99l6c3yuyy_largetall.jpg");
+  background-image: url("../img/ipad/hero_ipad__rh99l6c3yuyy_largetall.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -195,7 +210,7 @@ main .apple_block #block1 {
   width: 49.5%;
   position: relative;
   padding-top: 580px;
-  background-image: url("/apple_main_page/sources/img/block/promo_apple_watch_se_order__j70okzn28uye_large.jpg");
+  background-image: url("../img/block/promo_apple_watch_se_order__j70okzn28uye_large.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -204,7 +219,7 @@ main .apple_block #block2 {
   position: relative;
   width: 49.5%;
   padding-top: 580px;
-  background-image: url("/apple_main_page/sources/img/block/promo_mbp__ek7p477bkp6q_large.jpg");
+  background-image: url("../img/block/promo_mbp__ek7p477bkp6q_large.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -214,7 +229,7 @@ main .apple_block #block3 {
   margin-top: 10px;
   width: 49.5%;
   padding-top: 580px;
-  background-image: url("/apple_main_page/sources/img/block/promo_airpods_pro_order__d8xv36p4uwae_large.jpg");
+  background-image: url("../img/block/promo_airpods_pro_order__d8xv36p4uwae_large.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -224,7 +239,7 @@ main .apple_block #block4 {
   width: 49.5%;
   padding-top: 580px;
   position: relative;
-  background-image: url("/apple_main_page/sources/img/block/promo_apple_fitness_plus_new_years__bcmtyp1au76a_large.jpg");
+  background-image: url("../img/block/promo_apple_fitness_plus_new_years__bcmtyp1au76a_large.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -234,7 +249,7 @@ main .apple_block #block5 {
   margin-top: 10px;
   width: 49.5%;
   padding-top: 580px;
-  background-image: url("/apple_main_page/sources/img/block/promo_iphone_tradein__bugw15ka691e_large.jpg");
+  background-image: url("../img/block/promo_iphone_tradein__bugw15ka691e_large.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -244,7 +259,7 @@ main .apple_block #block6 {
   margin-top: 10px;
   width: 49.5%;
   padding-top: 580px;
-  background-image: url("/apple_main_page/sources/img/block/promo_apple_watch_series_9_order__b3u85rm9zf6u_large.jpg");
+  background-image: url("../img/block/promo_apple_watch_series_9_order__b3u85rm9zf6u_large.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

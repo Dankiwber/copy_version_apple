@@ -3,13 +3,15 @@ const extension = document.querySelector("header");
 
 function applyBlur() {
   var background = document.getElementById("background");
-  background.style.zIndex = "1";
+  background.style.width = "100%";
+  background.style.height = "100%";
   background.style.backdropFilter = "blur(10px)"; // Apply a 10px blur
 }
 
 function removeBlur() {
   var background = document.getElementById("background");
-  background.style.zIndex = "-1";
+  background.style.width = "0%";
+  background.style.height = "0%";
   background.style.backdropFilter = "blur(0px)"; // Remove the blur
 }
 
@@ -21,26 +23,26 @@ document.querySelectorAll(".header_js").forEach((item) => {
       SubMenu.innerHTML =
         '<div class="sub-container">' +
         '<div id="box1">' +
-        '<p id="box-title">shop</p>' +
-        "<p>Shop at Latest</p>" +
-        "<p>Mac</p>" +
-        "<p>iPad</p>" +
-        "<p>iPhone</p>" +
-        "<p>Apple Watch</p>" +
-        "<p>Accessories</p>" +
+        '<p class="animated-text" style="--delay: 0s;" id="box-title">shop</p>' +
+        "<p class='animated-text' style='--delay: 0.04s;'>Shop at Latest</p>" +
+        "<p class='animated-text' style='--delay: 0.08s;'>Mac</p>" +
+        "<p class='animated-text' style='--delay: 0.12s;'>iPad</p>" +
+        "<p class='animated-text' style='--delay: 0.16s;'>iPhone</p>" +
+        "<p class='animated-text' style='--delay: 0.2s;'>Apple Watch</p>" +
+        "<p class='animated-text' style='--delay: 0.24s;'>Accessories</p>" +
         "</div>" +
         "<div id='box2'>" +
-        "<p id='box-title'>Quick Links</p>" +
-        "<p>Find a Store</p>" +
-        "<p>Order Status</p>" +
-        "<p>Apple Trade in</p>" +
-        "<p>Financing</p>" +
+        "<p class='animated-text' style='--delay: 0.1s;' id='box-title'>Quick Links</p>" +
+        "<p class='animated-text' style='--delay: 0.16s;' >Find a Store</p>" +
+        "<p class='animated-text' style='--delay: 0.22s;' >Order Status</p>" +
+        "<p class='animated-text' style='--delay: 0.28s;' >Apple Trade in</p>" +
+        "<p class='animated-text' style='--delay: 0.34s;' >Financing</p>" +
         "</div>" +
         "<div id='box3'>" +
-        "<p id='box-title'>Shop Special Stores</p>" +
-        "<p>Certified Refurbished</p>" +
-        "<p>Education</p>" +
-        "<p>Business</p>" +
+        "<p  class='animated-text' style='--delay: 0.1s;' id='box-title'>Shop Special Stores</p>" +
+        "<p class='animated-text' style='--delay: 0.16s;' >Certified Refurbished</p>" +
+        "<p class='animated-text' style='--delay: 0.22s;' >Education</p>" +
+        "<p class='animated-text' style='--delay: 0.28s;'>Business</p>" +
         "</div>" +
         "</div>";
     }
