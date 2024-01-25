@@ -14,11 +14,12 @@ function removeBlur() {
   background.style.height = "0%";
   background.style.backdropFilter = "blur(0px)"; // Remove the blur
 }
-
+current = "";
 document.querySelectorAll(".header_js").forEach((item) => {
   item.addEventListener("mouseover", function () {
     extension.style.backgroundColor = "rgba(22, 22, 23)";
-    if (this.id == "store") {
+    if (this.id == "store" && this.id != current) {
+      current = this.id;
       extension.style.height = "430px";
       SubMenu.innerHTML =
         '<div class="sub-container">' +
@@ -46,79 +47,84 @@ document.querySelectorAll(".header_js").forEach((item) => {
         "</div>" +
         "</div>";
     }
-    if (this.id == "mac") {
+    if (this.id == "mac" && this.id != current) {
+      current = this.id;
       extension.style.height = "540px";
       SubMenu.innerHTML =
         '<div class="sub-container">' +
         '<div id="box1">' +
-        '<p id="box-title">Explore Mac</p>' +
-        "<p>Explore All Mac</p>" +
-        "<p>MacBook Air</p>" +
-        "<p>MacBook Pro</p>" +
-        "<p>iMac</p>" +
-        "<p>Mac mini</p>" +
-        "<p>Mac Studio</p>" +
-        "<p>Mac Pro</p>" +
-        "<p>Display</p>" +
-        '<p id="box-con">Compare Mac</p>' +
-        '<p id="box-buttom">Mac Does That</p>' +
+        '<p class="animated-text" style="--delay: 0s;" id="box-title">Explore Mac</p>' +
+        "<p class='animated-text' style='--delay: 0.04s;'>Explore All Mac</p>" +
+        "<p class='animated-text' style='--delay: 0.08s;'>MacBook Air</p>" +
+        "<p class='animated-text' style='--delay: 0.12s;'>MacBook Pro</p>" +
+        "<p class='animated-text' style='--delay: 0.16s;'>iMac</p>" +
+        "<p class='animated-text' style='--delay: 0.2s;'>Mac mini</p>" +
+        "<p class='animated-text' style='--delay: 0.24s;'>Mac Studio</p>" +
+        "<p class='animated-text' style='--delay: 0.28s;'>Mac Pro</p>" +
+        "<p class='animated-text' style='--delay: 0.32s;'>Display</p>" +
+        "<p class='animated-text' style='--delay: 0.36s;' id='box-con'>Compare Mac</p>" +
+        "<p class='animated-text' style='--delay: 0.4s;' id='box-buttom'>Mac Does That</p>" +
         "</div>" +
         '<div id="box2">' +
-        '<p id="box-title">Shop Mac</p>' +
-        "<p>Shop Mac</p>" +
-        "<p>Mac Accessories</p>" +
-        "<p>Mac Trade in</p>" +
-        "<p>Financing</p>" +
+        '<p class="animated-text" style="--delay: 0s;" id="box-title">Shop Mac</p>' +
+        "<p class='animated-text' style='--delay: 0.04s;'>Shop Mac</p>" +
+        "<p class='animated-text' style='--delay: 0.08s;'>Mac Accessories</p>" +
+        "<p class='animated-text' style='--delay: 0.12s;'>Mac Trade in</p>" +
+        "<p class='animated-text' style='--delay: 0.16s;'>Financing</p>" +
         "</div>" +
         '<div id="box3">' +
-        '<p id="box-title">More from Mac</p>' +
-        "<p>Mac Support</p>" +
-        "<p>AppleCare+ for Mac</p>" +
-        "<p>macOS Sonoma</p>" +
-        "<p>Final Cut Pro</p>" +
-        "<p>Logic Pro</p>" +
-        "<p>Continuity</p>" +
-        "<p>iCloud+</p>" +
-        "<p>Mac for Business</p>" +
-        "<p>Education</p>" +
+        '<p class="animated-text" style="--delay: 0s;" id="box-title">More from Mac</p>' +
+        "<p class='animated-text' style='--delay: 0.04s;'>Mac Support</p>" +
+        "<p class='animated-text' style='--delay: 0.08s;'>AppleCare+ for Mac</p>" +
+        "<p class='animated-text' style='--delay: 0.12s;'>macOS Sonoma</p>" +
+        "<p class='animated-text' style='--delay: 0.16s;'>Final Cut Pro</p>" +
+        "<p class='animated-text' style='--delay: 0.2s;'>Logic Pro</p>" +
+        "<p class='animated-text' style='--delay: 0.24s;'>Continuity</p>" +
+        "<p class='animated-text' style='--delay: 0.28s;'>iCloud+</p>" +
+        "<p class='animated-text' style='--delay: 0.32s;'>Mac for Business</p>" +
+        "<p class='animated-text' style='--delay: 0.36s;'>Education</p>" +
         "</div>" +
         "</div>";
     }
-    if (this.id == "ipad") {
+
+    if (this.id == "ipad" && this.id != current) {
+      current = this.id;
       extension.style.height = "510px";
       SubMenu.innerHTML =
         '<div class="sub-container">' +
         '<div id="box1">' +
-        '<p id="box-title">Explore iPad</p>' +
-        "<p>Explore All iPad</p>" +
-        "<p>iPad Pro</p>" +
-        "<p>iPad Air</p>" +
-        "<p>iPad</p>" +
-        "<p>iPad mini</p>" +
-        "<p>Apple Pencil</p>" +
-        "<p>Keyboards</p>" +
-        '<p id="box-con">Compare iPad</p>' +
-        '<p id="box-buttom">Why iPad</p>' +
+        '<p class="animated-text" style="--delay: 0s;" id="box-title">Explore iPad</p>' +
+        "<p class='animated-text' style='--delay: 0.04s;'>Explore All iPad</p>" +
+        "<p class='animated-text' style='--delay: 0.08s;'>iPad Pro</p>" +
+        "<p class='animated-text' style='--delay: 0.12s;'>iPad Air</p>" +
+        "<p class='animated-text' style='--delay: 0.16s;'>iPad</p>" +
+        "<p class='animated-text' style='--delay: 0.2s;'>iPad mini</p>" +
+        "<p class='animated-text' style='--delay: 0.24s;'>Apple Pencil</p>" +
+        "<p class='animated-text' style='--delay: 0.28s;'>Keyboards</p>" +
+        "<p class='animated-text' style='--delay: 0.32s;' id='box-con'>Compare iPad</p>" +
+        "<p class='animated-text' style='--delay: 0.36s;' id='box-buttom'>Why iPad</p>" +
         "</div>" +
         '<div id="box2">' +
-        '<p id="box-title">Shop iPad</p>' +
-        "<p>Shop iPad</p>" +
-        "<p>iPad Accessories</p>" +
-        "<p>iPad Trade in</p>" +
+        '<p class="animated-text" style="--delay: 0s;" id="box-title">Shop iPad</p>' +
+        "<p class='animated-text' style='--delay: 0.04s;'>Shop iPad</p>" +
+        "<p class='animated-text' style='--delay: 0.08s;'>iPad Accessories</p>" +
+        "<p class='animated-text' style='--delay: 0.12s;'>iPad Trade in</p>" +
         "</div>" +
         '<div id="box3">' +
-        '<p id="box-title">More from iPad</p>' +
-        "<p>iPad Support</p>" +
-        "<p>AppleCare+ for iPad</p>" +
-        "<p>iPadOS 17</p>" +
-        "<p>Final Cut Pro for iPad</p>" +
-        "<p>Logic Pro for iPad</p>" +
-        "<p>iCloud+</p>" +
-        "<p>Education</p>" +
+        '<p class="animated-text" style="--delay: 0s;" id="box-title">More from iPad</p>' +
+        "<p class='animated-text' style='--delay: 0.04s;'>iPad Support</p>" +
+        "<p class='animated-text' style='--delay: 0.08s;'>AppleCare+ for iPad</p>" +
+        "<p class='animated-text' style='--delay: 0.12s;'>iPadOS 17</p>" +
+        "<p class='animated-text' style='--delay: 0.16s;'>Final Cut Pro for iPad</p>" +
+        "<p class='animated-text' style='--delay: 0.2s;'>Logic Pro for iPad</p>" +
+        "<p class='animated-text' style='--delay: 0.24s;'>iCloud+</p>" +
+        "<p class='animated-text' style='--delay: 0.28s;'>Education</p>" +
         "</div>" +
         "</div>";
     }
-    if (this.id == "iphone") {
+
+    if (this.id == "iphone" && this.id != current) {
+      current = this.id;
       extension.style.height = "480px";
       SubMenu.innerHTML =
         '<div class="sub-container">' +
@@ -151,7 +157,8 @@ document.querySelectorAll(".header_js").forEach((item) => {
         "</div>" +
         "</div>";
     }
-    if (this.id == "watch") {
+    if (this.id == "watch" && this.id != current) {
+      current = this.id;
       extension.style.height = "480px";
       SubMenu.innerHTML =
         '<div class="sub-container">' +
@@ -183,7 +190,8 @@ document.querySelectorAll(".header_js").forEach((item) => {
         "</div>" +
         "</div>";
     }
-    if (this.id == "airpods") {
+    if (this.id == "airpods" && this.id != current) {
+      current = this.id;
       extension.style.height = "400px";
       SubMenu.innerHTML =
         '<div class="sub-container">' +
@@ -209,7 +217,8 @@ document.querySelectorAll(".header_js").forEach((item) => {
         "</div>" +
         "</div>";
     }
-    if (this.id == "tv&home") {
+    if (this.id == "tv&home" && this.id != current) {
+      current = this.id;
       extension.style.height = "380px";
       SubMenu.innerHTML =
         '<div class="sub-container">' +
@@ -242,7 +251,8 @@ document.querySelectorAll(".header_js").forEach((item) => {
         "</div>" +
         "</div>";
     }
-    if (this.id == "entertainment") {
+    if (this.id == "entertainment" && this.id != current) {
+      current = this.id;
       extension.style.height = "570px";
       SubMenu.innerHTML =
         '<div class="sub-container">' +
@@ -264,7 +274,8 @@ document.querySelectorAll(".header_js").forEach((item) => {
         "<p>Apple Music Support</p>" +
         "</div>";
     }
-    if (this.id == "accessories") {
+    if (this.id == "accessories" && this.id != current) {
+      current = this.id;
       extension.style.height = "470px";
       SubMenu.innerHTML =
         '<div class="sub-container">' +
@@ -285,7 +296,8 @@ document.querySelectorAll(".header_js").forEach((item) => {
         "<p>AirTag</p>" +
         "</div>";
     }
-    if (this.id == "support") {
+    if (this.id == "support" && this.id != current) {
+      current = this.id;
       extension.style.height = "500px";
       SubMenu.innerHTML =
         '<div class="sub-container">' +
