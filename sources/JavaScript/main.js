@@ -342,6 +342,7 @@ document.querySelectorAll(".header_js").forEach((item) => {
     if (!extension.contains(event.relatedTarget)) {
       removeBlur();
       hideSubMenu();
+      current = "";
     }
   });
 });
